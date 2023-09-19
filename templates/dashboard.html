@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <!-- Add your CSS styles here for the dashboard page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome to the Dashboard</h2>
+        <p>This is a protected page. You are logged in as {{ current_user.id }}.</p>
+        <p><a href="{{ url_for('logout') }}" class="btn btn-primary">Log Out</a></p>
+    </div>
+</body>
+</html>
