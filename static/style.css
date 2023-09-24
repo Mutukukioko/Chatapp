@@ -36,7 +36,21 @@ body {
 
 .log {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: hsla(140, 38%, 72%, 0.904);
     text-align: center;
     padding: 20px;
 }
+.flash-card {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.success-card { background-color: #4CAF50; color: #ffffff; }
+.error-card { background-color: #f44336; color: #ffffff; }
+.info-card { background-color: #2196F3; color: #ffffff; }
