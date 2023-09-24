@@ -1,12 +1,14 @@
 # Import the Flask class from the flask module
 from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-from . import dotenv
+import os
+import cred
+
 # Create an instance of the Flask class
 app = Flask(__name__)
 # Set a secret key for your Flask app
-app.secret_key = SECRET_KEY
-
+app.secret_key = cred.SECRET_WORD
+print(app.secret_key)
 # Initialize Flask-Login
 login_manager = LoginManager()
 login_manager.init_app(app)
