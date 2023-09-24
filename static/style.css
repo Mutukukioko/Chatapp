@@ -17,13 +17,15 @@ body {
 
 .btn-primary {
     background-color: #007bff;
+    border-radius: 5px;
     color: #fff;
 }
 .login-container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    padding-top: 20px;
+    background-color: #27db90;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
